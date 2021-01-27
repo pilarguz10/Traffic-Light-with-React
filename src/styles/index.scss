@@ -11,15 +11,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.crossed{
+
+body{
+    background-image: url("https://papers.co/wallpaper/papers.co-mu61-london-city-street-people-winter-dark-36-3840x2400-4k-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#crossed{
    
     padding: 20px;
-    background-color: #333;
     color: #ddd;
-    width: 300px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     box-shadow: 0 0 40px yellow;
-    border-radius: 16px;
+    border-radius: 22px;
+}
+
+.btn{
+     font-size: 1.2em; 
+      padding: 20px;
+     border-radius: 26px;
 }
 
 .col-center
@@ -27,6 +39,12 @@
   float: none;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20%;
 }
 
 #rojo{
@@ -36,6 +54,10 @@
 #naranja{
     text-align: center;
 }
-#verde{
+#verde {
     text-align: center;
+}
+
+.fondo{
+    background-color: red;
 }

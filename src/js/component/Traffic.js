@@ -6,30 +6,35 @@ export const Traffic = () => {
 	let red_selected = "";
 	if (color === "red") red_selected = "crossed";
 	let yellow_selected = "";
-	if (color === "yellow") yellow_selected = "selected";
+	if (color === "yellow") yellow_selected = "crossed";
 	let green_selected = "";
-	if (color === "green") green_selected = "selected";
+	if (color === "green") green_selected = "crossed";
 
 	return (
 		<div className="row">
-			<div className="col-md-5 col-center bg-dark">
-				<div id="rojo" className={red_selected}>
-					<button
-						className="myClass rounded-circle bg-danger"
-						onClick={() => setColor((color = "red"))}
-					/>
-				</div>
-				<div id="naranja" className={yellow_selected}>
-					<button
-						className="myClass rounded-circle bg-warning"
-						onClick={() => setColor((color = "yellow"))}
-					/>
-				</div>
-				<div id="verde" className={green_selected}>
-					<button
-						className="myClass rounded-circle bg-success"
-						onClick={() => setColor((color = "green"))}
-					/>
+			<div className="col-xs-1 col-center bg-dark">
+				<div className="contenido">
+					<div id="rojo">
+						<button
+							id={red_selected}
+							className="btn btn-danger"
+							onClick={() => setColor((color = "red"))}
+						/>
+					</div>
+					<div id="naranja">
+						<button
+							id={yellow_selected}
+							className="btn btn-warning"
+							onClick={() => setColor((color = "yellow"))}
+						/>
+					</div>
+					<div id="verde">
+						<button
+							className="btn btn-success"
+							id={green_selected}
+							onClick={() => setColor((color = "green"))}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
